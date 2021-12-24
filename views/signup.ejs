@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head.ejs') %>
+<title> Sign up </title>
+
+<body>
+    
+    <div id = "bg">
+        <div class = "header">
+            <a href = "#" style = "font-family: 'Chiller'; font-size: 3em;">Burganic</a><a class = "link" href = "/login">Login</a>
+        </div>
+    
+        <div class = "main">
+            <form action = "/" method = "post">    
+                <h1>Sign up</h1>
+                <i class = "fa fa-user"></i>
+                <input type = "text" placeholder = "Full Name" name = "name" id="name"> <br><span id="warning1"></span><br>
+                <i class = "fa fa-phone"></i>
+                <input type = "text" placeholder = "Mobile Number" name = "mobileno" id="phone"> <br><span id="warning2"></span><br>
+                <i class = "fa fa-envelope"></i>
+                <input type = "email" placeholder = "Email" name = "email" id="email"> <br>
+                <span id="warning4"></span><br>
+                <i class = "fa fa-user-circle-o"></i>
+                <input type = "text" placeholder = "Username" name = "username" id="user"> <br><span id="warning3"></span><br>
+                <i class = "fa fa-lock"></i>
+                <input type = "password" placeholder = "Password" name = "pass1" id="pass1" onblur="return Validate()"> <br><span id="warning5"></span><br>
+                <i class = "fa fa-unlock-alt"></i>
+                <input type = "password" placeholder = "Confirm Password" name = "pass2" id="paas2"> <br><span id="warning6"></span><br>
+                <input type="submit" id="save" value="SignUp"/>
+            </form>
+        </div>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+    <script src="JS/validate.js" type="text/javascript"></script>
+</body>
+</html>

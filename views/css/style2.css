@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(7, 6, 6);
+}
+
+h1{
+    font-family: 'Chiller';
+    font-size: 90px;
+    font-weight: bolder;
+    color: white;
+    margin:20px 30px 30px;
+}
+
+h2{
+    color: rgb(211, 22, 22);
+    margin:10px 30px; 
+}
+
+#err-code{
+    font-size: 30px;
+    font-weight: bold;
+}
+div{
+    width:400px;
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    margin:100px auto;
+    background-color: rgb(31, 27, 27);
+    color: white;
+}
+
+p{
+    margin:10px 30px;
+    font-size: 23px;
+    
+}

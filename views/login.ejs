@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head.ejs') %>
+<title> Login </title>
+
+<body>
+    
+    <div id = "bg">
+        <div class = "header">
+            <a href = "#" style = "font-family: 'Chiller'; font-size: 3em;">Burganic</a><a class = "link" href = "/signup">Sign up</a>
+        </div>
+    
+        <div class = "main">
+            <form class="form-signin" action="/login" method="post">
+            <h1>Login</h1>
+            <i class = "fa fa-user-circle-o"></i>
+            <input type = "text" placeholder = "Username" name="username"> <br>
+            <i class = "fa fa-lock"></i>
+            <input type = "password" placeholder = "Password" name="pass1"> <br>
+<!--            <input checked type = "checkbox"><span style = "font-size: 90%;padding: 0 110px 0 5px;">Show Password</span><br>-->
+            <button id="loggedin" type="submit">Login</button>
+        </form>
+        </div>
+    </div>
+    
+    <%- include('./partials/footer.ejs') %>
+   
+</body>
+</html>
